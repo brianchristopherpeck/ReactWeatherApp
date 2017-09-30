@@ -2,12 +2,22 @@ var React = require('react');
 
 // Presentational component... doesn't maintain a state
 var WeatherForm = React.createClass({
+    onFormSubmit: function(e) {
+      e.preventDefault();
+
+      var location = this.refs.location.value;
+
+      if (location.length > 0) {
+        this.refs.location.value = '';
+        this.props.onSearch(location);
+      }
+    },
     render: function () {
       return(
         <div>
         <form onSubmit={this.onFormSubmit}>
-          <input type="text" ref="city" placeholder="Enter City Name"/>
-          <button>Get City</button>
+          <input type="text" ref="location" placeholder="Enter Location"/>
+          <button>Get Weather</button>
         </form>
         </div>
       );
