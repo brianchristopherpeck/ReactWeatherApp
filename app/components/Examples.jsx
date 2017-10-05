@@ -1,11 +1,20 @@
 var React = require('react');
+var {Link} = require('react-router');
 
 // Stateless functional component
 var Examples = (props) => {
 	return (
 		<div>
-			<h3>Examples</h3>
-			<p>Enter a location in the form and press "Get Weather"</p>
+			<h1 className="text-center">Examples</h1>
+			<p>Here are a few example locations to try out:</p>
+			<ol>
+				<li>
+					<Link to="/?location=philadelphia">Philadelphia, PA</Link>
+				</li>
+				<li>
+					<Link to="/?location=syracuse">Syracuse, NY</Link>
+				</li>
+			</ol>
 		</div>
 	)
 }
