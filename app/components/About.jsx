@@ -4,8 +4,22 @@ var React = require('react');
 var About = (props) => {
 	return (
 		<div>
-			<h3>About</h3>
-			<p>This is a weather app that uses opnweathermap.org to get the current weather in a specific location</p>
+			<h1 className="text-center">About</h1>
+			<p>This is a weather application built on React. I built this as an example
+				of using a single page application to hit an api and provide a service. </p>
+			<p>
+				Here is the stack that this app uses:
+			</p>
+			<ul>
+				<li>
+					<a href="https://facebook.github.io/react" alt="Facebook react.js Git Repo">React</a>
+					- This was the javascript framework used.
+				</li>
+				<li>
+					<a href="http://openweathermap.org" alt="Open Weather Map">Open Weather Map</a>
+					- This React application hits the OpenWeatherMap.org api and returns the current temperature by city
+				</li>
+			</ul>
 		</div>
 	)
 }
