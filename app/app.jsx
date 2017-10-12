@@ -12,6 +12,8 @@ require('style!css!foundation-sites/dist/foundation.min.css');
 // Initialize foundation
 $(document).foundation();
 
+// App CSS
+require('style!css!ApplicationStyles');
 
 // Prop variables. Get passed to component on initialization
 ReactDOM.render(

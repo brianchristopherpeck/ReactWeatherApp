@@ -4,7 +4,7 @@ var React = require('react');
 var About = (props) => {
 	return (
 		<div>
-			<h1 className="text-center">About</h1>
+			<h1 className="text-center page-title">About</h1>
 			<p>This is a weather application built on React. I built this as an example
 				of using a single page application to hit an api and provide a service. </p>
 			<p>
