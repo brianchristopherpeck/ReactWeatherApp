@@ -24,7 +24,9 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.24.1",
     "foundation-sites": "6.2.0",
+    "node-sass": "^4.5.3",
     "nodemon": "^1.11.0",
-    "webpack": "^1.12.13"
+    "sass-loader": "^6.0.6",
+    "webpack": "^1.15.0"
   }
 }
